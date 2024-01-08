@@ -1,0 +1,42 @@
+.services {
+  padding: 50px 0;
+}
+.services .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(285px, auto));
+  gap: 30px;
+}
+.services .box {
+  background-color: var(--clr-md-black);
+  padding: 30px;
+  border-radius: 5px;
+  position: relative;
+  transition: 0.3s;
+}
+.services .box:hover {
+  transform: translateY(-10px);
+}
+
+.services .box::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  background-color: var(--clr-robin-blue);
+  border-radius: 3px;
+  transition: 0.3s;
+  margin: auto;
+  transform: scale(0);
+  width: 100%;
+  left: 0;
+}
+.services .box:hover:before {
+  transform: scale(1);
+}
+
+.title {
+  margin: 15px 0;
+}
+.bottom {
+  margin-top: 20px;
+}

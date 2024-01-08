@@ -1,0 +1,38 @@
+.item_show {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 2px solid var(--clr-black);
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.item_hide_border {
+  border-color: var(--clr-robin-blue);
+}
+.feature_content {
+  padding: 150px 10%;
+}
+.content_hide {
+  height: 0px;
+  overflow: hidden;
+  transition: all 300ms;
+}
+.content_hide .show {
+  height: 100px;
+  margin: 5px 0;
+  transition: all 300ms;
+  overflow: auto;
+}
+.item button {
+  transition: 0.3s;
+}
+.item .buttonRotate {
+  transform: rotate(90deg);
+}
+.item p {
+  padding: 10px 0;
+}
